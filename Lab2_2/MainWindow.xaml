@@ -1,0 +1,15 @@
+﻿<Window x:Class="Lab2_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2_2"
+        mc:Ignorable="d"
+        Title="Chat" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="AddText" Content="Добавить" HorizontalAlignment="Left" Margin="603,295,0,0" VerticalAlignment="Top" Height="50" Width="124" FontSize="16" Click="AddText_Click"/>
+        <TextBox x:Name="Message" HorizontalAlignment="Left" Height="50" Margin="58,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="540" FontSize="22"/>
+        <ListBox x:Name="Chat" HorizontalAlignment="Left" Height="210" Margin="58,80,0,0" VerticalAlignment="Top" Width="669" d:ItemsSource="{d:SampleData ItemCount=5}" FontSize="22"/>
+
+    </Grid>
+</Window>
